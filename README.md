@@ -1,6 +1,34 @@
-# Dhairya-s-Portfolio
-A personal portfolio showcasing my skills, projects, and learning journey as a B.Tech CSE (Data Science) student. It highlights my experience in web development, data analysis, and problem-solving, along with projects that demonstrate real-world applications.
+# 🌐 Personal Portfolio
+
+A responsive personal portfolio website built using **HTML, CSS, and JavaScript** to showcase my skills, projects, education, and contact information.
+
+## 🚀 Features
+
+- Responsive design
+- About Me section
+- Skills showcase
+- Projects section
+- Contact form
+- Smooth scrolling navigation
+
+## 🛠️ Technologies Used
+
+- HTML5
+- CSS3
+- JavaScript
+
+## 📂 Project Structure
+
+```
+Portfolio/
+│── index.html
+│── style.css
+│── script.js
+│── images/
+└── README.md
+```
 
 
+## 📄 License
 
-LIVE LINK : https://dhairyaaaportfolio.netlify.app
+This project is open source and available under the **MIT License**.
