@@ -1,0 +1,323 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Akash's Portfolio</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,200;1,300;1,400;1,500;1,600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <header>
+        <nav>
+            <div class="left">Akash's Portfolio</div>
+            <div class="right">
+                <ul>
+                    <li><a href="#" onclick="openResumeModal(); return false;">Resume</a></li>
+                    <li><a href="#" onclick="openAboutModal(); return false;">About</a></li>
+                    <li><a href="#" onclick="openEducationModal(); return false;">Education</a></li>
+                    <li><a href="#" onclick="scrollToProjects(); return false;">Projects</a></li>
+                    <li><a href="#" onclick="openContactModal(); return false;">Contact Me</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+    <main>
+        <section class="firstsection">
+            <div class="leftContent">
+                <h1>Hi, I'm Akash Singh</h1>
+                <p>A BTech Student Passionate About Web Development and Creating Innovative Digital Solutions.</p>
+                 <span id="element"></span>
+            </div>
+            
+            <div class="rightSection">
+                <img src="pg.png.jpg" alt="Dhairya">
+            </div>
+        </section>
+        <hr>
+        <section class="secondsection">
+            <span class="text-2xlgray">what i have done so far</span>
+            <h1>Work Experiences</h1>
+            
+            <div class="experience-container">
+                <div class="experience-card" onclick="openCertificatesModal()">
+                    <h3>CERTIFICATES</h3>
+                    <div class="position">Full Stack Web Development</div>
+                    <div class="duration">Completed 2026</div>
+                    <p>BTech student excelling in computer science with expertise in full-stack development, data structures, and software engineering. Recognized for academic performance and technical innovation.</p>
+                    <div class="click-hint">Click to view all certificates</div>
+                </div>
+                
+                <div class="experience-card" onclick="openProjectsModal()">
+                    <h3>Projects</h3>
+                    <div class="position">Web Development Project</div>
+                    <div class="duration">Completed: 2026</div>
+                    <p>Developed and deployed a modern web application showcasing full-stack development skills. Built with modern technologies and deployed on Netlify for optimal performance.</p>
+                    <div class="click-hint">Click to view all projects</div>
+                </div>
+                
+                <div class="experience-card">
+                    <h3>Internship</h3>
+                    <div class="position">Developer Intern</div>
+                    <div class="duration">Jan 2023 - May 2023</div>
+                    <p>Gained hands-on experience in web development. Contributed to various projects and enhanced technical skills in front-end development.</p>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Certificates Modal -->
+    <div id="certificatesModal" class="modal">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h2>My Certificates</h2>
+                <span class="close-btn" onclick="closeCertificatesModal()">&times;</span>
+            </div>
+            <div class="modal-body">
+                <div class="certificates-grid">
+                    <!-- Certificate 1 - Python -->
+                    <div class="certificate-card">
+                        <div class="certificate-info">
+                            <h3>Python Programming</h3>
+                            <p class="issuer">HackerRank</p>
+                            <p class="date">Completed: December 2024</p>
+                            <a href="https://www.hackerrank.com/certificates/93ee2d3a6ff6" target="_blank" class="view-cert-btn">View Certificate</a>
+                        </div>
+                    </div>
+
+                    <!--Certificate 2 - TCS -->
+                    <div class="certificate-card">
+                        <div class="certificate-info">
+                            <h3>Comunnication skills</h3>
+                            <p class="issuer">TCS ion</p>
+                            <p class="date">Completed: 2025</p>
+                            <a href="https://drive.google.com/open?id=11bwHd2o-_TJT3rSFMT0NQdtZz8SR96yq&usp=drive_fs" target="_blank" class="view-cert-btn">View Certificate</a>
+                        </div>
+                    </div>
+
+                    <!-- Certificate 3 - Simplilearn -->
+                    <div class="certificate-card">
+                        <div class="certificate-info">
+                            <h3>Python Programming Course: Beginner to Advanced</h3>
+                            <p class="issuer">Guvi | HCL</p>
+                            <p class="date">Completed: 2025</p>
+                            <a href="https://www.guvi.in/share-certificate/61s7W455U4lq617708" target="_blank" class="view-cert-btn">View Certificate</a>
+                        </div>
+                    </div>
+
+                    <!-- Certificate 4 - IBM
+                    <div class="certificate-card">
+                        <div class="certificate-info">
+                            <h3>IBM Certificate</h3>
+                            <p class="issuer">IBM Cognitive Class</p>
+                            <p class="date">Completed: 2024</p>
+                            <a href="https://www.netacad.com/certificates/?issuanceId=a9a7023f-7523-469c-8485-86459df2ebb4" target="_blank" class="view-cert-btn">View Certificate</a>
+                        </div>
+                    </div> -->
+
+                    <!-- Certificate 5 - Naukri
+                    <div class="certificate-card">
+                        <div class="certificate-info">
+                            <h3>Campus Participation</h3>
+                            <p class="issuer">Naukri Campus</p>
+                            <p class="date">Completed: 2024</p>
+                            <a href="https://www.naukri.com/campus/certificates/participation/v0/684feefea208d8335f5f6ced?utm_source=certificate&utm_medium=copy&utm_campaign=684feefea208d8335f5f6ced" target="_blank" class="view-cert-btn">View Certificate</a>
+                        </div>
+                    </div> -->
+
+                    <!-- Certificate 6 - Naukri 2
+                    <div class="certificate-card">
+                        <div class="certificate-info">
+                            <h3>Campus Achievement</h3>
+                            <p class="issuer">Naukri Campus</p>
+                            <p class="date">Completed: 2024</p>
+                            <a href="https://www.naukri.com/campus/certificates/participation/v0/68590e8d27995d505767c48e?utm_source=certificate&utm_medium=copy&utm_campaign=68590e8d27995d505767c48e" target="_blank" class="view-cert-btn">View Certificate</a>
+                        </div>
+                    </div> -->
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Projects Modal -->
+    <div id="projectsModal" class="modal">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h2>My Projects</h2>
+                <span class="close-btn" onclick="closeProjectsModal()">&times;</span>
+            </div>
+            <div class="modal-body">
+                <div class="projects-grid">
+                    <!-- Project 1 -->
+                    <div class="project-card">
+                        <div class="project-info">
+                            <h3>Modern Web Application</h3>
+                            <p class="tech-stack">Technologies: HTML, CSS, JavaScript, React</p>
+                            <p class="project-date">Completed: 2024</p>
+                            <p class="description">A fully responsive web application built with modern technologies, featuring interactive UI components and optimized performance.</p>
+                            <a href="https://magical-conkies-1b5377.netlify.app/" target="_blank" class="view-project-btn">View Live Project</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Project 2 -->
+            <div class="project-card">
+                <div class="project-info">
+                    <h3>Online Quiz System</h3>
+                    <p class="tech-stack">Technologies: HTML, CSS, JavaScript</p>
+                    <p class="project-date">Completed: 2025</p>
+                    <p class="description">An interactive quiz application allowing users to test their knowledge with multiple-choice questions, instant scoring, and a clean, responsive interface.</p>
+                    <a href="https://ayush-singh-14.github.io/Online-Quiz-System/" target="_blank" class="view-project-btn">View Live Project</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- About Modal -->
+    <div id="aboutModal" class="modal">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h2>About Me</h2>
+                <span class="close-btn" onclick="closeAboutModal()">&times;</span>
+            </div>
+            <div class="modal-body">
+                <div class="about-content">
+                    <div class="about-text" style="font-family: 'Georgia', serif; font-size: 1.1rem; line-height: 1.8; color: #ddd; text-align: justify;">
+                        <p>Hi, I'm Akash Singh, a B.Tech student graduating in 2027, driven by curiosity, creativity, and a passion for technology. I'm continuously learning and building skills in software development, problem-solving, and digital innovation, with a strong focus on creating meaningful and impactful solutions.</p>
+                        
+                        <p>I believe in growing through hands-on experience, real-world projects, and continuous improvement. My goal is to become a skilled professional who not only writes clean and efficient code but also builds products that add real value to people's lives.</p>
+                        
+                        <p>I'm preparing myself for the future by working on practical projects, strengthening my technical foundation, and developing the mindset required to succeed in the fast-evolving tech industry. I aim to be part of an organization where I can learn, contribute, grow long-term, and make a positive impact.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Contact Modal -->
+    <div id="contactModal" class="modal">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h2>Contact Me</h2>
+                <span class="close-btn" onclick="closeContactModal()">&times;</span>
+            </div>
+            <div class="modal-body">
+                <div class="contact-content">
+                    <div class="contact-text" style="font-family: 'Georgia', serif; font-size: 1.1rem; line-height: 1.8; color: #ddd; text-align: justify;">
+                        <p>Hi, I'm Akash Singh, a B.Tech student passionate about technology, learning, and building meaningful digital solutions. I'm currently open to internships, projects, collaborations, and career opportunities.</p>
+                        
+                        <p>If you have an idea, opportunity, or just want to connect — feel free to reach out. I'll do my best to respond quickly.</p>
+                        
+                        <h3 style="color: rgb(199, 138, 224); margin: 30px 0 20px 0; font-size: 1.3rem;">📬 Get in Touch</h3>
+                        
+                        <div class="contact-details" style="background: rgba(199, 138, 224, 0.1); padding: 20px; border-radius: 10px; border-left: 4px solid rgb(199, 138, 224);">
+                            <p><strong>📧 Personal Email:</strong> <a href="mailto:akashrautana01@gmail.com" style="color: rgb(115, 115, 215); text-decoration: none;">akashrautana01@gmail.com</a></p>
+                            <p><strong>🎓 College Email:</strong> <a href="mailto:akashrautana01@mpgi.edu.in" style="color: rgb(115, 115, 215); text-decoration: none;">akashrautana01@mpgi.edu.in</a></p>
+                            <p><strong>📱 Phone:</strong> <a href="tel:7850029292" style="color: rgb(115, 115, 215); text-decoration: none;">7850029292</a></p>
+                            <p><strong>📍 Location:</strong> India</p>
+                            <p><strong>💼 Open to:</strong> Internships, Tech Projects, Freelance, Learning Opportunities</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Resume Modal -->
+    <div id="resumeModal" class="modal">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h2>My Resume</h2>
+                <span class="close-btn" onclick="closeResumeModal()">&times;</span>
+            </div>
+            <div class="modal-body">
+                <div class="resume-content">
+                    <div class="resume-text" style="font-family: 'Georgia', serif; font-size: 1.1rem; line-height: 1.8; color: #ddd; text-align: center;">
+                        <p style="font-size: 1.3rem; margin-bottom: 20px;">📄 My Resume</p>
+                        <p>Feel free to view or download my latest resume below.</p>
+
+                        <div style="margin: 30px 0; padding: 20px; background: rgba(199, 138, 224, 0.1); border-radius: 10px; border-left: 4px solid rgb(199, 138, 224);">
+                            <p style="margin: 0;"><strong>💼 Current Status:</strong> B.Tech Student (Graduating 2027)</p>
+                            <p style="margin: 10px 0 0 0;"><strong>🎯 Focus:</strong> Full Stack Web Development, Data Structures & Algorithms</p>
+                            <p style="margin: 10px 0 0 0;"><strong>📧 Contact:</strong> <a href="mailto:akashrautana01@gmail.com" style="color: rgb(115, 115, 215); text-decoration: none;">akashrautana01@gmail.com</a></p>
+                        </div>
+
+                        <a href="https://drive.google.com/file/d/10HqaaCYgi5eHjKQQW-HXm8NlEdpt78Vw/view?usp=drivesdk" target="_blank" class="view-project-btn" style="margin-top: 10px;">View Resume</a>
+
+                        <p style="margin-top: 20px;">For any questions, please use the Contact Me section to get in touch!</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Education Modal -->
+    <div id="educationModal" class="modal">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h2>My Education</h2>
+                <span class="close-btn" onclick="closeEducationModal()">&times;</span>
+            </div>
+            <div class="modal-body">
+                <div class="education-content">
+                    <div class="education-text" style="font-family: 'Georgia', serif; font-size: 1rem; line-height: 1.8; color: #ddd; text-align: justify;">
+                        
+                        <!-- Bachelor's Degree -->
+                        <div style="margin: 20px 0; padding: 20px; background: rgba(199, 138, 224, 0.1); border-radius: 10px; border-left: 4px solid rgb(199, 138, 224);">
+                            <h3 style="color: rgb(199, 138, 224); margin: 0 0 10px 0; font-size: 1.2rem;">🎓 B.Tech in Computer Science Engineering (Computer Science and Engineering)</h3>
+                            <p style="color: rgb(115, 115, 215); margin: 5px 0; font-weight: 600;">2023 – 2027</p>
+                            <p style="color: #ddd; margin: 10px 0; line-height: 1.6;">Currently pursuing a strong foundation in Data Science, Machine Learning, Programming, and Software Development, with a focus on real-world problem solving and project-based learning.</p>
+                        </div>
+                        
+                        <!-- Senior Secondary -->
+                        <div style="margin: 20px 0; padding: 20px; background: rgba(199, 138, 224, 0.05); border-radius: 10px; border-left: 4px solid rgb(115, 115, 215);">
+                            <h3 style="color: rgb(115, 115, 215); margin: 0 0 10px 0; font-size: 1.1rem;">📚 Senior Secondary (Class 12) — UP,2023</h3>
+                            <p style="color: #ddd; margin: 5px 0; font-weight: 500;">Passed in 2023</p>
+                        </div>
+                        
+                        <!-- Secondary -->
+                        <div style="margin: 20px 0; padding: 20px; background: rgba(199, 138, 224, 0.05); border-radius: 10px; border-left: 4px solid rgb(115, 115, 215);">
+                            <h3 style="color: rgb(115, 115, 215); margin: 0 0 10px 0; font-size: 1.1rem;">📖 Secondary (Class 10) — UP,2021</h3>
+                            <p style="color: #ddd; margin: 5px 0; font-weight: 500;">Passed in 2021</p>
+                        </div>
+                        
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <div class="footer-container">
+            <div class="footer-content">
+                <div class="social-section">
+                    <div class="social-links">
+                        <a href="https://github.com/ayush-singh-14" target="_blank" class="social-btn github-btn">
+                            <i class="fab fa-github"></i> GitHub
+                        </a>
+                        <a href="https://www.linkedin.com/in/akash-singh-893689316" target="_blank" class="social-btn linkedin-btn">
+                            <i class="fab fa-linkedin"></i> LinkedIn
+                        </a>
+                    </div>
+                </div>
+                <div class="contact-section">
+                    <div class="footer-info">
+                        <p class="name">Akash Singh</p>
+                        <p class="email">Email: <a href="mailto:akashrautana01@gmail.com">akashrautana01@gmail.com</a></p>
+                        <p class="copyright">&copy; 2026 Akash Singh. All rights reserved.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+    <script src="script.js"></script>
+</body>
+
+</html>
